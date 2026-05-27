@@ -1,0 +1,43 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: lianyun-pg
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: lianyun
+      POSTGRES_USER: lianyun
+      POSTGRES_PASSWORD: lianyun_dev
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - "5433:5432"
+    volumes:
+      - lianyun-pg-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U lianyun -d lianyun"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  app:
+    build:
+      context: .
+    image: lianyun-app:latest
+    container_name: lianyun-app
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://lianyun:lianyun_dev@postgres:5432/lianyun
+      NODE_ENV: development
+      PORT: "3000"
+      LLM_API_ENDPOINT: ${LLM_API_ENDPOINT:-}
+      LLM_API_KEY: ${LLM_API_KEY:-}
+      LLM_MODEL: ${LLM_MODEL:-}
+      BATCH_CONCURRENCY: ${BATCH_CONCURRENCY:-2}
+    ports:
+      - "32111:3000"
+
+volumes:
+  lianyun-pg-data:
+    name: lianyun-pg-data

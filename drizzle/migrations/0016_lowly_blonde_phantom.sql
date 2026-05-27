@@ -1,0 +1,1 @@
+ALTER TABLE "topic_negotiations" ADD COLUMN "decisions" jsonb DEFAULT '{}'::jsonb NOT NULL;

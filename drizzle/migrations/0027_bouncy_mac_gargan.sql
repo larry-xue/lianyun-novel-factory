@@ -1,0 +1,1 @@
+ALTER TABLE "books" ADD COLUMN "style_md" text DEFAULT '' NOT NULL;

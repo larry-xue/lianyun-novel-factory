@@ -1,0 +1,101 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "PingFang SC", "Microsoft YaHei",
+    "Segoe UI", sans-serif;
+  --color-bg: oklch(0.975 0.008 86);
+  --color-surface: oklch(0.99 0.004 86);
+  --color-card: oklch(0.997 0.002 86);
+  --color-fg: oklch(0.2 0.028 255);
+  --color-muted: oklch(0.5 0.026 255);
+  --color-subtle: oklch(0.66 0.018 255);
+  --color-border: oklch(0.885 0.012 86);
+  --color-accent: oklch(0.58 0.17 38);
+  --color-accent-soft: oklch(0.94 0.052 57);
+}
+
+html {
+  /* prevent pull-to-refresh from hijacking scroll on mobile */
+  overscroll-behavior-y: none;
+}
+
+html,
+body {
+  background:
+    linear-gradient(180deg, oklch(0.99 0.006 86) 0%, var(--color-bg) 36rem),
+    var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+  line-height: 1.58;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  /* remove blue tap highlight on mobile */
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-size: 14px;
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+::selection {
+  background: var(--color-accent-soft);
+  color: var(--color-fg);
+}
+
+a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", "Microsoft YaHei Mono", monospace;
+}
+
+pre {
+  line-height: 1.65;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: oklch(0.76 0.015 86);
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.68 0.018 86);
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+.scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,43 @@
+# dependencies
+node_modules
+.pnpm-store
+
+# build / runtime
+.output
+.vinxi
+.tanstack
+dist
+build
+.cache
+
+# env
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# editor / OS
+.DS_Store
+.idea
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.recommended.json
+*.log
+*.tsbuildinfo
+
+# local smoke / debug logs
+/logs/
+
+# tests
+coverage
+.vitest
+
+# vite/vinxi config probe artifacts
+app.config.timestamp_*.js
+vite.config.timestamp_*.*
+
+# drizzle
+drizzle/migrations/meta/_journal.json.lock
+
+# pgdata if mounted to a host path (we use a named volume so this is just a safety net)
+pgdata

@@ -1,0 +1,1 @@
+ALTER TYPE "public"."revision_kind" ADD VALUE 'gate_rejected' BEFORE 'manual';

@@ -1,0 +1,1 @@
+ALTER TYPE "public"."negotiation_status" ADD VALUE 'designing' BEFORE 'confirmed';
