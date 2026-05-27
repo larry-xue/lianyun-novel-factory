@@ -90,7 +90,7 @@ function NavContent({
             <Boxes className="h-4 w-4" />
           </span>
           <span className="flex min-w-0 flex-col gap-0.5">
-            <span className="truncate text-base font-semibold tracking-tight">连云工厂</span>
+            <span className="truncate text-base font-semibold tracking-tight">炼云工厂</span>
             <span className="truncate text-xs text-(--color-muted)">小说自动批量生产线</span>
           </span>
         </Link>

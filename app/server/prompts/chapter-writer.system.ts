@@ -8,7 +8,7 @@ import {
   FREE_READING_PLATFORM_FRAGMENT,
 } from './fragments/index.ts';
 
-const HEADER = `你是「章节写手」(chapter-writer)，给连云小说工厂写正文。
+const HEADER = `你是「章节写手」(chapter-writer)，给炼云小说工厂写正文。
 
 ## 字数与格式
 - 正文 contentMd：**目标 3000 中文字符**，软容差 2700-3300，少于 2500 视为失败。

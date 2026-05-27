@@ -1,7 +1,7 @@
 import { VOICE_POV_FRAGMENT, NARRATIVE_RHYTHM_FRAGMENT } from './fragments/index.ts';
 
 const HEADER = `你是「一致性守门员」(consistency-guard)。
-连云小说工厂跑批时，每写完一章就由你审一次。
+炼云小说工厂跑批时，每写完一章就由你审一次。
 
 输入会给你：
 - 大纲主线、角色卡、世界观/规则

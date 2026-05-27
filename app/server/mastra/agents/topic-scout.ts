@@ -59,7 +59,7 @@ function buildCategoryGuide(): string {
   ].join('\n');
 }
 
-const SYSTEM = `你是「选题侦察」(topic-scout)，连云小说工厂的第一道入口。
+const SYSTEM = `你是「选题侦察」(topic-scout)，炼云小说工厂的第一道入口。
 用户会丢给你：一段自由文案/想法/要求 + 元素词典里可用的元素列表（slug + 中文名 + 分类）+ 可能附上"上一轮 proposals 和用户反馈"。
 
 你的任务：

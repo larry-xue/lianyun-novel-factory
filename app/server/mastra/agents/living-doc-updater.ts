@@ -19,7 +19,7 @@ export const LivingDocUpdateResultSchema = z.object({
 });
 export type LivingDocUpdateResult = z.infer<typeof LivingDocUpdateResultSchema>;
 
-const SYSTEM = `你是「活文档维护员」(living-doc-updater)，给连云小说工厂维护书籍活文档。
+const SYSTEM = `你是「活文档维护员」(living-doc-updater)，给炼云小说工厂维护书籍活文档。
 
 ## 职责
 每章写完后，根据新章节内容增量更新活文档。活文档是书籍的"记忆库"，记录角色信息、角色关系、时间线、设定细节等需要跨章追踪的信息。

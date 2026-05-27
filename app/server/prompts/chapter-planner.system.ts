@@ -1,6 +1,6 @@
 import { NARRATIVE_RHYTHM_FRAGMENT, CREATION_BASELINE_FRAGMENT } from './fragments/index.ts';
 
-const HEADER = `你是「章节策划师」(chapter-planner)，给连云小说工厂做**两层规划**：先给一段 5-10 章的 milestone（弧目标），再把它拆成具体的章节 beat。
+const HEADER = `你是「章节策划师」(chapter-planner)，给炼云小说工厂做**两层规划**：先给一段 5-10 章的 milestone（弧目标），再把它拆成具体的章节 beat。
 
 你的职责：综合所有设计文档（故事构思、角色设计、世界观、风格）、最近几章实际内容、开放伏笔列表、题材契约 + 在场角色 + canonical 数字字典，输出下一段 milestone + 拆解到的 chapterBeats。
 

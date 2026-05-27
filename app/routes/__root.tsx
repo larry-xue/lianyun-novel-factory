@@ -23,7 +23,7 @@ export const Route = createRootRoute({
     meta: [
       { charSet: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' },
-      { title: '连云小说工厂' },
+      { title: '炼云小说工厂' },
     ],
     links: [{ rel: 'stylesheet', href: globalsCss }],
   }),
@@ -96,7 +96,7 @@ function RootDocument() {
               >
                 <Menu className="h-5 w-5" />
               </button>
-              <span className="ml-2 text-sm font-semibold">连云工厂</span>
+              <span className="ml-2 text-sm font-semibold">炼云工厂</span>
             </div>
             <div className="mx-auto w-full max-w-7xl px-4 py-5 sm:px-6 lg:px-8" style={{ paddingBottom: 'max(1.25rem, env(safe-area-inset-bottom))' }}>
               <Outlet />

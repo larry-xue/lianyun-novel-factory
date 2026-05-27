@@ -46,7 +46,7 @@ function LoginPage() {
           <div className="flex h-10 w-10 items-center justify-center rounded-md bg-(--color-accent-soft) text-(--color-accent)">
             <LogIn className="h-5 w-5" />
           </div>
-          <h1 className="text-base font-semibold">连云工厂登录</h1>
+          <h1 className="text-base font-semibold">炼云工厂登录</h1>
           <p className="text-xs text-(--color-muted)">账号由管理员通过脚本创建</p>
         </div>
         <div className="flex flex-col gap-3">

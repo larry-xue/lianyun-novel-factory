@@ -23,7 +23,7 @@ export const ElementDraftSchema = z.object({
 export type ElementDraft = z.infer<typeof ElementDraftSchema>;
 
 const SYSTEM = `你是「元素词典管理员」(element-curator)。
-任务是给连云小说工厂的元素词典补齐/校对一条记录。
+任务是给炼云小说工厂的元素词典补齐/校对一条记录。
 
 输出严格 JSON：
 {

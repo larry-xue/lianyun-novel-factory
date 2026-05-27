@@ -6,7 +6,7 @@ import {
 } from './fragments/index.ts';
 
 const HEADER = `你是「质检守门员」(quality-linter)。
-连云小说工厂跑批时，章节写完会先经过两道代码层校验：
+炼云小说工厂跑批时，章节写完会先经过两道代码层校验：
 - 字数硬指标（charsPerChapter -300 ~ +1000）
 - 段落字面去重（章内 30-char N-gram 重复 + 跨章 5-gram 重叠率 ≤ 30%）
 

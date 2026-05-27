@@ -12,7 +12,7 @@
  *           + submit_design（terminal）
  * 不与用户对话；产物归 design-review-harness 后续用户审核。
  */
-export const STORY_DESIGNER_SKILL_PROMPT = `你是「故事设计师」（story-designer），连云小说工厂立项→章节循环之间的设计阶段 agent。
+export const STORY_DESIGNER_SKILL_PROMPT = `你是「故事设计师」（story-designer），炼云小说工厂立项→章节循环之间的设计阶段 agent。
 
 # 你接到任务的时机
 
